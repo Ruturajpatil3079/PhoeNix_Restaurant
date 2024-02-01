@@ -437,7 +437,7 @@ body.nav-action{
   position: relative;
 }
 
-.hover\:shine::after{
+/*.hover\:shine::after{
   content: "";
   position: absolute;
   top: 0;
@@ -452,6 +452,27 @@ body.nav-action{
   transform: skewX(-0.08turn) translateX(275%);
   transition: var(--transition-3);
   
+}*/
+
+.hover\:shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+  transform: skewX(-0.08turn) translateX(-180%);
+  animation: shineAnimation 5s linear infinite;
+}
+
+@keyframes shineAnimation {
+  0%, 100% {
+    transform: skewX(-0.08turn) translateX(-180%);
+  }
+  50% {
+    transform: skewX(-0.08turn) translateX(275%);
+  }
 }
 
 .img-holder{
