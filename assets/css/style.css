@@ -899,6 +899,7 @@ body.nav-action{
   pointer-events: none;
   user-select: none;
   z-index: -1;
+  opacity: 0.4;
 }
 
 .hero .slider-item.active .slider-bg{
